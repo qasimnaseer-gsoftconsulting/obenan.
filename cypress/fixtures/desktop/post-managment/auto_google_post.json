@@ -1,0 +1,101 @@
+{
+    "smoke" : [
+        {
+            "desktop" : [
+                {
+                    "TC1005" : [
+                        {
+                            "popupTitle" : "Uploading Images",
+                            "accurateSpecsImage" : "test.jpg",
+                            "locationExactMatch" : "obenan testing automation (370 N block, lahore)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "regression" : [
+        {
+            "desktop" :[
+                {
+                    "TC1006" : [
+                        {
+                            "firstField" : "email",
+                            "secondField" : "password",
+                            "buttonName" : "Sign in",
+                            "dashboardCheck" : "View Listings",
+                            "sideBarLink" : "Post Management",
+                            "sideBarChidlLink" : "Auto Google Posts",
+                            "pageTitle" : "All Posts",
+                            "createPost" : "Create Post",
+                            "accurateSpecsImage" : "test.png",
+                            "lessHeightJPG" : "less_height.jpg",
+                            "imageDelete" : "delete image",
+                            "popupTitle" :"Uploading Images",
+                            "locationExactMatch" : "obenan testing automation (370 N block, lahore)"
+                        }
+                    ], 
+                    "TC1007" : [
+                        {
+                            "accurateSpecsImage" : "test.jpg",
+                            "less_height" : "less_height.jpg",
+                            "less_width" : "less_width.png",
+                            "image4" : "test2.png",
+                            "image5" : "test3.png",
+                            "image6" : "test4.png",
+                            "firstPopupText" : "Drag & Drop Image(s) here",
+                            "popupOneCrossIcon" : "Close",
+                            "popupTwoCancelButton" : "Cancel",
+                            "popupTwoCrossIcon" : "Close",
+                            "popupTitle" :"Uploading Images",
+                            "locationExactMatch" : "obenan testing automation (370 N block, lahore)"
+                        }
+                    ],
+                    "TC1008" : [
+                        {
+
+                            "lessHeightJPG" : "less_height.jpg",
+                            "lesWidthPNG" : "less_width.png",
+                            "accurateSpecsImageJPG" : "test.jpg",
+                            "accurateSpecsImagePNG" : "test2.png",
+                            "locationExactMatch" : "obenan testing automation (370 N block, lahore)"
+ 
+                        }
+                    ],
+                    "TC1009" : [
+                        {
+                            "lessWidthGif" : "less_width.gif",
+                            "lessHeightGif" : "less_height.gif",
+                            "accurateSpecsGif" : "test.gif",
+                            "lessWidthSvg" : "less_width.svg",
+                            "lessHeightSvg" : "less_height.svg",
+                            "accurateSpecsSvg" : "test.svg",
+                            "accurateSpecsJpg" : "test.jpg",
+                            "accurateSpecsPng" : "test.png",
+                            "locationExactMatch" : "obenan testing automation (370 N block, lahore)"
+                        }
+                    ],
+                    "TC1010" : [
+                        {
+                            "zipFile" : "test.zip",
+                            "pdfFile" : "test.pdf",
+                            "less_heightJPG" : "less_height.jpg",
+                            "less_widthJPG" : "less_width.jpg",
+                            "less_height_widthJPG" : "less_height_width.jpg",
+                            "less_heightPng" : "less_height.png",
+                            "less_widthPng" : "less_width.png",
+                            "less_height_widthPng" : "less_height_width.png",
+                            "less_heightBmp" : "less_height.bmp",
+                            "less_widthBmp" : "less_width.bmp",
+                            "less_height_widthBmp" : "less_height_width.bmp",
+                            "accurateSpecsImageJPG" : "test.jpg",
+                            "accurateSpecsImagePNG" : "test2.png",
+                            "accurateSpecsImageBMP" : "test.bmp",
+                            "locationExactMatch" : "obenan testing automation (370 N block, lahore)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

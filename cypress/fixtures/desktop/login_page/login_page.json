@@ -1,0 +1,72 @@
+{
+    "smoke": [
+        {
+            "desktop": [
+                {
+                    "loginPage": [
+                        {
+                            "TC1001": [
+                                {
+                                    "pageHeading": "Welcome back !",
+                                    "pageSubHeading": "Sign in to your account to continue",
+                                    "firstField": "Email",
+                                    "secondField": "Password",
+                                    "checkBoxName": "Remember me",
+                                    "buttonName": "Sign in",
+                                    "forgetLinkName": "Forgot password",
+                                    "signUpLinkName": "Don't have an account? Sign-Up",
+                                    "firstHelperText": "Email is required",
+                                    "secondHelperText": "Password is required",
+                                    "defaultLang": "English"
+                                }
+                            ],
+                            "TC1003" : [
+                                {
+                                    "dashboardCheck" : "View Listings"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "regression": [
+        {
+            "desktop": [
+                {
+                    "loginPage": [
+                        {
+                            "TC1002" : [
+                                {
+                                    "firstField": "Email",
+                                    "secondField": "Password",
+                                    "wrongUsername" : "dev22@obenan.com",
+                                    "wrongPassword" : "1234",
+                                    "passwordAlert" : "Incorrect password",
+                                    "usernameAlert" : "No active user with this email",
+                                    "wrongCredentialAlert" : "No active user with this email",
+                                    "dashboardCheck" : "View Listings"
+                                }
+                            ],
+                            "TC1004" : [
+                                {
+                                    "defaultLanguage" : "English",
+                                    "newLanguage" : "German",
+                                    "loginPageHeading" : "Welcome back !",
+                                    "newLoginPageHeading" : "Willkommen zurück!",
+                                    "newDashboardCheck" : "Listings anzeigen",
+                                    "dashboardCheck" : "View Listings",
+                                    "buttonName" :"Sign in",
+                                    "newButtonName" : "Eintragen"
+
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+
+}

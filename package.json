@@ -1,0 +1,33 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+    "cy:run": "cypress run --browser chrome --env includeTests=true",
+    "cypress-parallel": "cypress-parallel -s cy:run -t 3 -d 'cypress/e2e/**/TC*.cy.js' -w 'cypress/parallel-weights.json'",
+    "test:smoke-desktop-login-parallel": "cypress-parallel -s cy:run -t 2 -d 'cypress/e2e/smoke/desktop/login_page/**/TC*.cy.js' -w 'parallel-weights.json'",
+    "test:regression-desktop-login-parallel": "cypress-parallel -s cy:run -t 2 -d 'cypress/e2e/regression/desktop/login_page/**/TC*.cy.js' -w 'parallel-weights.json'",
+    "test:smoke-desktop-post-management-parallel": "cypress-parallel -s cy:run -t 2 -d 'cypress/e2e/smoke/desktop/post_managment/auto-google-post/**/TC*.cy.js' -w 'parallel-weights.json'",
+    "test:regression-desktop-post-management-parallel": "cypress-parallel -s cy:run -t 3 -d 'cypress/e2e/regression/desktop/post_managment/auto-google-post/**/TC*.cy.js' -w 'parallel-weights.json'",
+   
+   
+    "test:desktop-suite": "npx cypress run --browser chrome --spec 'cypress/e2e/testsuite.cy.js'",
+    "test:regression-desktop-login-suite": "npx cypress run --browser chrome --spec 'cypress/e2e/regression/desktop/login_page/login-page-suite.cy.js'",
+    "test:regression-desktop-post-management-suite": "npx cypress run --browser chrome --spec 'cypress/e2e/regression/desktop/post_managment/auto-google-post/auto-google-post-suite.cy.js'",
+    "test:smoke-desktop-login-suite": "npx cypress run --browser chrome --spec 'cypress/e2e/smoke/desktop/login_page/login-page-suite.cy.js'",
+    "test:smoke-desktop-post-management-suite": "npx cypress run --browser chrome --spec 'cypress/e2e/smoke/desktop/post_managment/auto-google-post/auto-google-post-suite.cy.js'"
+  
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.12.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-multi-reporters": "^1.6.3",
+    "cypress-parallel": "^0.13.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "supportFile": "cypress/support/e2e.js"
+}

@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2023-06-20T07:34:58.651Z",
+  "duration": 60170,
+  "file": "cypress\\e2e\\regression\\desktop\\post_managment\\auto-google-post\\TC1007.cy.js"
+}
