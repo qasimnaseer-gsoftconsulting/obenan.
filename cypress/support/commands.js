@@ -32,48 +32,7 @@ import 'cypress-xpath';
 //for file upload
 import 'cypress-file-upload';
 
-// //Home page of pedlar store
-// const { visitHomePage } = require('../support/utils');
-// Cypress.Commands.add('visitHomePage', visitHomePage);
 
-// // For verify title and products on Products page 
-// const { verifyProductsPage } = require('../support/utils');
-// Cypress.Commands.add('verifyProductsPage', verifyProductsPage);
-
-/*======================  Elements ===========================*/
-// Landing page popup button
-// const {landingPopupButton} = require('../support/element');
-// Cypress.Commands.add('landingPopupButton', landingPopupButton);
-
-// // homepage popup button we can access by passing cy.homePageButton(name)
-// const {clickButton} = require('../support/element');
-// Cypress.Commands.add('clickButton', clickButton);
-
-// // this is for navbar dropdown button 
-// const {navbarDropdown} = require('../support/element');
-// Cypress.Commands.add('navbarDropdown', navbarDropdown);
-
-// // this is for navbar dropdown item
-// const {navbarDropdownItem} = require('../support/element');
-// Cypress.Commands.add('navbarDropdownItem', navbarDropdownItem);
-
-// // this is for filter brands product
-// const {filterClick} = require('../support/element');
-// Cypress.Commands.add('filterClick', filterClick);
-
-
-const elementMethods = require('./element');
-const utilsMethods = require('./component');
-
-// Add all element methods as Cypress commands we can access these commands in any file which is
-// present in e2e or any other sub folder
-for (const methodName in elementMethods) {
-  Cypress.Commands.add(methodName, elementMethods[methodName]);
-}
-
-for (const methodName in utilsMethods) {
-    Cypress.Commands.add(methodName, utilsMethods[methodName]);
-}
 
 
 
