@@ -1,6 +1,6 @@
 //import module from support/pageObjects
 import desktopLoginPageObject  from "./desktop/login_page/desktopLoginPage";
-import autoGooglePost from "./desktop/post-management/googleAutoPost";
+import autoGooglePost from "./desktop/post-management/autoGooglePost";
 
 //initialize from imports
 const desktopLoginPageObjects = new desktopLoginPageObject();

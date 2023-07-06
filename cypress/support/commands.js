@@ -1,3 +1,4 @@
+import { desktopLoginPageObjects } from './pageObjects';
 /// <refrence types="cypress"/>
 // ***********************************************
 // This example commands.js shows you how to
@@ -31,6 +32,20 @@
 import 'cypress-xpath';
 //for file upload
 import 'cypress-file-upload';
+
+Cypress.Commands.add('loginForDesktop', () => {
+    cy.session('desktopLoginSession',()=>{
+      desktopLoginPageObjects.setViewPortForDesktop();
+      desktopLoginPageObjects.visitLoginPage();
+      desktopLoginPageObjects.setEmailAddress();
+      desktopLoginPageObjects.setPasswrod();
+      desktopLoginPageObjects.signInButton().click();
+      desktopLoginPageObjects.verifyDashboard();
+    },{
+        cacheAcrossSpecs:true
+    });
+  });
+
 
 
 

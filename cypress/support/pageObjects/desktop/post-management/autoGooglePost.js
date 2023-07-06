@@ -47,7 +47,7 @@ const imageUploadFailedError = "//p[normalize-space()='Uploaded failed']";
 // const imageDeleteBtnOnPopup = "//p[contains(text(), '"+imgName+"')]/parent::div/parent::div//button[@aria-label='delete']"; //imageDeleteButtonAtUploadPopup() , deleteAllUploadedImages()
 
 
-class googleAutoPost{
+class autoGooglePost{
 
     //Required Login for google auto post
     loginForGoogleAutoPost(){
@@ -309,4 +309,4 @@ class googleAutoPost{
 
 }
 
-export default googleAutoPost;
+export default autoGooglePost;

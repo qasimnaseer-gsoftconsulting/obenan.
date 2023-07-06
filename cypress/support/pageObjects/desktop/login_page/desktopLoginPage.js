@@ -39,9 +39,9 @@ const signoutPopupConfirmGerman = "//button[normalize-space()='Bestätigen Sie']
 class desktopLoginPageObject {
 
     //visit login page
-    visitLoginPage() {
+    visitLoginPage(link) {
         cy.visit(baseURL);
-        cy.url().should('contains', baseURL + 'auth/sign-in');
+        cy.url().should('contains', baseURL || link + 'auth/sign-in');
     }
 
     //set desktop viewport
@@ -113,6 +113,20 @@ class desktopLoginPageObject {
         return forgetPasswordLink();
     }
 
+    tokenWala(){
+        // Retrieve the token from localStorage
+        const token = localStorage.getItem('token');
+
+        // Check if the token exists
+        if (token) {
+        // Token exists, you can use it in your code
+        console.log('Token:', token);
+        } else {
+        // Token doesn't exist in localStorage
+        console.log('Token not found');
+        }
+    }
+
     //Verify sign up link
     verifySignUpLink(link) {
         return cy.get(signUpLink).should('contain', link);
@@ -139,8 +153,8 @@ class desktopLoginPageObject {
     }
 
     //type in email field
-    setEmailAddress() {
-        cy.xpath(emailField).type(email);
+    setEmailAddress(mail) {
+        cy.xpath(emailField).type(email || mail);
     }
 
     //type wrong email
@@ -149,8 +163,8 @@ class desktopLoginPageObject {
     }
 
     //type in password field
-    setPasswrod() {
-        cy.xpath(passwordField).type(password);
+    setPasswrod(paswrd) {
+        cy.xpath(passwordField).type(password || paswrd);
     }
 
     //type wrong password
