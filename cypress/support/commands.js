@@ -44,7 +44,7 @@ Cypress.Commands.add('loginForDesktop', () => {
     },{
         cacheAcrossSpecs:true
     });
-  });
+});
 
 
 

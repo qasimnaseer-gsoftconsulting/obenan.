@@ -1,25 +1,13 @@
 const { defineConfig } = require("cypress");
 
-
-
 module.exports = defineConfig({
-  // "pluginsFile": "path/to/utils/file" ,
-  // reporter: 'cypress-mochawesome-reporter',
 
-  // reporterOptions: {
-  //   charts: true,
-  //   reportPageTitle: 'custom-title',
-  //   embeddedScreenshots: true,
-  //   inlineAssets: true,
-  //   saveAllAttempts: false,
+  // env: {
+  //     apiURL : 'https://betaapi.obenan.com/api/v1/',
+  //     baseURL: 'https://betaapp.obenan.com/',
+  //     email: 'automation@obenan.com',
+  //     password: '12345'
   // },
-
-  env: {
-      apiURL : 'https://betaapi.obenan.com/api/v1/',
-      baseURL: 'https://betaapp.obenan.com/',
-      email: 'automation@obenan.com',
-      password: '12345'
-  },
   e2e: {
     specPattern: "**/*.cy.js",
     reporter: "cypress-multi-reporters",
