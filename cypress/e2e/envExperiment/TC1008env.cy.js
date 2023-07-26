@@ -1,7 +1,7 @@
 
 import { autoGooglePosts } from "../../support/pageObjects/index";
 
-describe('[TC1006]', () => {
+describe('[TC1008env]', () => {
 
     beforeEach(() => {
       cy.loginForDesktop();

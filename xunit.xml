@@ -1,0 +1,14 @@
+<testsuite name="Mocha Tests" tests="1" failures="0" errors="1" skipped="0" timestamp="Wed, 26 Jul 2023 06:44:48 GMT" time="0.446">
+<testcase classname="[TC1005]" name="Title : Post Creation(Create a post according to sample data )" time="0"><failure>&#x60;cy.visit()&#x60; must be called with a &#x60;url&#x60; or an &#x60;options&#x60; object containing a &#x60;url&#x60; as its 1st argument
+
+https://on.cypress.io/visit
+CypressError: &#x60;cy.visit()&#x60; must be called with a &#x60;url&#x60; or an &#x60;options&#x60; object containing a &#x60;url&#x60; as its 1st argument
+
+https://on.cypress.io/visit
+    at Context.visit (http://localhost:63909/__cypress/runner/cypress_runner.js:147295:78)
+    at wrapped (http://localhost:63909/__cypress/runner/cypress_runner.js:160602:43)
+From Your Spec Code:
+    at desktopLoginPageObject.visitLoginPage (webpack:///./cypress/support/pageObjects/desktop/login_page/desktopLoginPage.js:43:11)
+    at autoGooglePost.loginForGoogleAutoPost (webpack:///./cypress/support/pageObjects/desktop/post-management/autoGooglePost.js:55:32)
+    at Context.eval (webpack:///./cypress/e2e/smoke/desktop/post_managment/auto-google-post/TC1005.cy.js:23:24)</failure></testcase>
+</testsuite>
